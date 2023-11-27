@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favourite Movies</title>
+    <link rel="stylesheet" href="css/presentation.css">
+    <script src="https://kit.fontawesome.com/d6f8d0ce63.js" crossorigin="anonymous"></script>
+    <script src = "js/presentation.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="bigscreen-only">
+            <a href="presentation.html">Home</a>
+            <a href="favmovies.html" class="active">Favourite movies</a>
+            <a href="favbooks.html">Favourite books</a>
+            <a class="icon" target="_blank" href="https://www.linkedin.com/in/miguel-%C3%A1ngel-gonz%C3%A1lez-rocha-55319a268/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="icon" target="_blank" href="https://twitter.com/MikeGzz163">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </nav>
+        <a href="#navigation">
+            <img class="small-only" src="img/bars-solid.svg" alt="Nav Icon">
+        </a>
+
+        <div id="navigation" class="modal">
+            <nav class="smallnav">
+                <a href="presentation.html">Home</a>
+                <a href="favmovies.html">Favourite movies</a>
+                <a href="favbooks.html">Favourite books</a>
+                <a target="_blank" href="https://www.linkedin.com/in/miguel-%C3%A1ngel-gonz%C3%A1lez-rocha-55319a268/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/MikeGzz163">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </nav>
+            
+            <a href="#" class="box-close">
+                ×
+            </a>
+        </div>
+    </header>
+
+    <a class="poster" href="#popup-review">
+        <img class="posterWidth" src="img/poster1.jpg" alt="Harry Potter and the Prisoner of Azkaban" onclick="updateReview(this)">
+        <p class="subtitle">Harry Potter and the Prisoner of Azkaban</p>
+    </a>
+    <a class="poster" href="#popup-review">
+        <img class="posterWidth" src="img/poster2.jpg" alt="A Silent Voice" onclick="updateReview(this)">
+        <p class="subtitle">A Silent Voice</p>
+    </a>
+    <a class="poster" href="#popup-review">
+        <img class="posterWidth" src="img/poster3.jpg" alt="Beauty and the Beast" onclick="updateReview(this)">
+        <p class="subtitle">Beauty and the Beast</p>
+    </a>
+    <a class="poster endofline" href="#popup-review">
+        <img class="posterWidth" src="img/poster4.jpg" alt="In the Heights" onclick="updateReview(this)">
+        <p class="subtitle">In the Heights</p>
+    </a>
+    <a class="poster" href="#popup-review">
+        <img class="posterWidth" src="img/poster5.jpg" alt="tick, tick... BOOM!" onclick="updateReview(this)">
+        <p class="subtitle">tick, tick... BOOM!</p>
+    </a>
+    <a class="poster" href="#popup-review">
+        <img class="posterWidth" src="img/poster6.jpg" alt="Luca" onclick="updateReview(this)">
+        <p class="subtitle">Luca</p>
+    </a>
+    <a class="poster" href="#popup-review">
+        <img class="posterWidth" src="img/poster7.jpg" alt="Eternals" onclick="updateReview(this)">
+        <p class="subtitle">Eternals</p>
+    </a>
+    <a class="poster endofline" href="#popup-review">
+        <img class="posterWidth" src="img/poster8.jpg" alt="Black Panther" onclick="updateReview(this)">
+        <p class="subtitle">Black Panther</p>
+    </a>
+
+    <div id="popup-review" class="modal" style="background-color: rgba(0,0,0,0.7);">
+        <div class="content">
+            <h1 id="movietitle">
+                Movie title
+            </h1>
+            <img id="reviewposter" src="img/poster1.jpg" alt="Review poster">
+            <p id="review">This is a preview of the review of the movie.</p>
+            <a href="#"
+               class="box-close" style="color:#000000">
+                ×
+            </a>
+        </div>
+    </div>
+
+</body>    
+</html>
